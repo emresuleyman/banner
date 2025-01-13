@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Banners</title>
+    <style>
+        .iframe-container {
+            display: flex;
+            flex-direction: column; /* Frame'leri dikey hizalamak için */
+            gap: 20px; /* Frame'ler arasında boşluk */
+            margin-top: 20px;
+            align-items: flex-start; /* Sol kısımdan hizalama */
+        }
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-container">
+        <!-- 970x250 Banner -->
+        <iframe src="banner-970x250/index.html" width="970" height="250"></iframe>
+
+        <!-- 200x200 Banner -->
+        <iframe src="banner-200x200/index.html" width="200" height="200"></iframe>
+
+        <!-- 160x600 Banner (Sağ tarafta yeni eklenen) -->
+        <iframe src="banner-160x600/banner-160x600.html" width="160" height="600"></iframe>
+    </div>
+</body>
+</html>
